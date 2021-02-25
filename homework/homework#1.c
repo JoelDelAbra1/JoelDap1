@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX 500
+#define MAX 500 // se puede cambiar
 
 char fin[MAX];
 
@@ -18,7 +18,7 @@ int main() {
       }if (p == 0) {
           fin[i++] = c;
       }
-    }fin[i] = '\0';
+    }fin[i] = '\0'; //En i termina y borra
      
   return c == EOF;
   }
