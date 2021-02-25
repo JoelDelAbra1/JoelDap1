@@ -1,3 +1,4 @@
+// i based in the exercise 1-23
 #include <stdio.h>
 #define MAX 500 // se puede cambiar
 
