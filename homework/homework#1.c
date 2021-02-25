@@ -1,6 +1,10 @@
-// i based in the exercise 1-23
+
+
+//NO CALIFICAR
+
+
 #include <stdio.h>
-#define MAX 500 // se puede cambiar
+#define MAX 500 
 
 char fin[MAX];
 
@@ -19,7 +23,7 @@ int main() {
       }if (p == 0) {
           fin[i++] = c;
       }
-    }fin[i] = '\0'; //En i termina y borra
+    }fin[i] = '\0'; 
      
   return c == EOF;
   }
