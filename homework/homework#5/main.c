@@ -1,3 +1,5 @@
+//Works on https://www.onlinegdb.com/
+// Primero debes de poner la fila y despues la columna (separados de un espacio) like : 3 4
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
