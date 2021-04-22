@@ -1,5 +1,8 @@
-//Works on https://www.onlinegdb.com/
-// Primero debes de poner la fila y despues la columna (separados de un espacio) like : 3 4
+/*Works on https://www.onlinegdb.com/ (aqui fue donde lo hice y probe)
+Agregar tambien el archvo .h para que funcione
+ Primero debes de poner la fila y despues la columna (separados de un espacio) like : 3 4
+ El tamaño del board ya esta definido y es de 10x10 
+ */
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -39,7 +42,6 @@ int main() {
         uncovered_board[totalbombs[i][0]][totalbombs[i][1]]='*';
   
     totalmoves = dimension*dimension - NUMBOMBS;
-
  //Continue
     while (!gameover) {
 
@@ -57,7 +59,6 @@ int main() {
     }
     return 0;
 }
-
 void getmove(int *x,int *y) {
 
     // Read in move.
@@ -72,7 +73,6 @@ void getmove(int *x,int *y) {
         scanf("%d%d", x, y);
     }
 }
-
 void printboard(char board[][dimension]) {
 
     int i,j;
@@ -92,12 +92,10 @@ void printboard(char board[][dimension]) {
         printf("\n");
     }
 }
-
 int movement(char board[][dimension], char realboard[][dimension],
             int totalbombs[][2], int row, int column, int *totalmoves) {
 
-    int i, j, num;
-  
+  int i, j, num;
     if (realboard[row][column]=='*') {
     
         board[row][column]='*';
@@ -108,14 +106,12 @@ int movement(char board[][dimension], char realboard[][dimension],
         printf("You lose!\n");
         return 1;
     }
-    
     // square already chosen.
     else if (board[row][column]!='_') {
     
         printf("That square as already been cleared.\n");
         return 0;
     }
-  
     // Execute a normal non-losing move.
     else {
  
@@ -138,7 +134,6 @@ int movement(char board[][dimension], char realboard[][dimension],
       return 0;
     }
 }
-
 int valid(int row, int column) {
     if (row < 0) return 0;
     
@@ -162,7 +157,6 @@ int count = 0;
     }
     return count;
 }
-
 void getbombs(int bomblist[][2]) {
   
 int i;
