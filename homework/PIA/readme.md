@@ -1,0 +1,1 @@
+Yo estaba pensado en un programa en el que se tenga una base de datos de las credenciales (podría ser un tipo “NIP”) para votar y que al momento de querer registrar tu voto primero compruebe si eres mayor de edad para poder registrar el voto y así sacar al ganador y también cuanto % voto por ese candidato.
