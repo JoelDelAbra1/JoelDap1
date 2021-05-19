@@ -1,0 +1,5 @@
+PRODUCTO   CON IVA       SIN IVA 
+Coca		     1160.00				1000.00
+Gel		     1080.00				1000.00		(FRONTERA)
+Coca		     1160.00				1000.00
+Gel		     1080.00				1000.00		(FRONTERA)

@@ -1,0 +1,3 @@
+DEPOSITO     DIF     PAGAR AL BANCO
+				  
+25000.00 		10000.00		300.00				  
