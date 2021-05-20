@@ -8,9 +8,9 @@ int main (){
   float a,b; // variables para poder calcular y guardar 
   
 
-  do{ // Seguir funcionando hata que el ususario quiera
+  do{ // Seguir funcionando hasta que el ususario quiera
     
-    menu(); // Se llama ala funcion menu para mostrar las opciones dispoibles
+    menu(); // Se llama a la funcion menu para mostrar las opciones dispoibles
 
     scanf("%d",&opcion); //Se guarda la opcion
 
@@ -20,7 +20,7 @@ int main (){
     break;
 
     case 2:
-      printf("\nIngresa la cantidad que pagaste por tu producto: "); //se pide lo que se pago por el producto para obtener lo que pagaste de iva
+      printf("\nIngresa la cantidad que pagaste por tu producto: "); // se pide lo que se pago por el producto para obtener lo que pagaste de iva
     scanf("%f",&a);
     printf("\nLo que pagarias SIN EL IVA seria : $ %.2f$\n",siniva(a)); //se imprime el resultado
     break;
@@ -58,7 +58,7 @@ case 6:
 
 void menu(){ // Se despliega el menu de opciones 
   printf("\nQue quires calcular\n\n");
-  printf("0.-Salir\n1.-Impuesto Sobre la Renta\n2.-LO QUE PAGASTE DE IVA\n3.-LO QUE PAGARAS CON EL IVA\n4.-IESP-Gasolinas\n5.-Impuesto sobre Depósitos en Efectivo\n6.-Impuesto sobre Automóviles Nuevos\n\n");
+  printf("0.-Salir\n1.-Impuesto Sobre la Renta\n2.-Lo que PAGARIAS DE IVA\n3.-Lo que PAGARIAS CON EL IVA\n4.-IESP-Gasolinas\n5.-Impuesto sobre Depósitos en Efectivo\n6.-Impuesto sobre Automóviles Nuevos\n\n");
 }
 
 
@@ -135,7 +135,7 @@ float siniva(float precio){
   printf("\nIngresa el nombre del producto : ");
   scanf("%s",producto); 
 
-  printf("\nEstas en Forntera?\n\n1.-Si\n2.-No\n\n"); // Si esta en forntera el impuesto sera del 8%
+  printf("\nEstas en Frontera?\n\n1.-Si\n2.-No\n\n"); // Si esta en frontera el impuesto sera del 8%
   scanf("%d",&opcion);
 
   FILE * escribirsistema = fopen ("IVA.txt", "a");
@@ -175,7 +175,7 @@ float coniva(float antes, float ya_con_iva){
 
    ya_con_iva=antes; //Se iguala para poder modificar su valor
 
-  printf("\n\nEstas en Forntera?\n1.-Si\n2.-No\n\n"); // IVA menor en la forntera
+  printf("\n\nEstas en Frontera?\n1.-Si\n2.-No\n\n"); // IVA menor en la frontera
   scanf("%d",&opcion);
 
   FILE * escribirsistema = fopen ("IVA.txt", "a");
