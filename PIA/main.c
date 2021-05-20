@@ -22,13 +22,13 @@ int main (){
     case 2:
       printf("\nIngresa la cantidad que pagaste por tu producto: "); //se pide lo que se pago por el producto para obtener lo que pagaste de iva
     scanf("%f",&a);
-    printf("\nLo que pagarias SIN EL IVA sera : $ %.2f$\n",siniva(a)); //se imprime el resultado
+    printf("\nLo que pagarias SIN EL IVA seria : $ %.2f$\n",siniva(a)); //se imprime el resultado
     break;
     
     case 3:
       printf("\nIngrese el valor de tu producto: "); //Solicita el valor antes del IVA para calcular cuanto sera en total
     scanf("%f",&a);
-    printf("\nLo que PAGARAS CON EL IVA sera : $ %.2f$\n",coniva(a,b)); //Se imprme el resultado
+    printf("\nLo que pagarias CON EL IVA seria : $ %.2f$\n",coniva(a,b)); //Se imprme el resultado
     break;
     
     case 4:
